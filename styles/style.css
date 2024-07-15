@@ -91,7 +91,7 @@ align-items: center;
  margin: 0 auto; 
   
 }
-.banner-image{
+.banner-image , .architect-img{
   width: 100%;
 }
 
@@ -142,7 +142,19 @@ align-items: center;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
+#experience-badge{
+  padding: 25px 22px;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  right: 40px;
+  bottom: 60px;
+  /* z-index: 1; */
+}
+#experience-year{
+  font-size: 3rem;
+  font-weight: 700;
+}
 /* some fact related styles */
 .new{
   max-width: 1139px;
@@ -190,7 +202,7 @@ align-items: center;
   filter: grayscale(100%);
 }
 @media screen and (max-width:576px) {
-  .navbar, .nav-links , .teams{
+  .navbar, .nav-links , .teams , .features{
     flex-direction: column;
   }
   .team-img-container, .facts-container{
@@ -205,12 +217,16 @@ align-items: center;
     gap: 50px;
     justify-items: center;
 }
+#experience-badge{
+  margin-top: 80px;
+  margin-left: 50px;
+}
 }
 
 /* medium device media query  */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .teams{
+  .teams , .features{
     flex-direction:column;
 }
 .our-features{
@@ -220,5 +236,9 @@ align-items: center;
   grid-template-columns: repeat(3,1fr);
   gap: 30px;
  justify-items:  center;
+}
+#experience-badge{
+  margin-top: 80px;
+  margin-left: 50px;
 }
 }
